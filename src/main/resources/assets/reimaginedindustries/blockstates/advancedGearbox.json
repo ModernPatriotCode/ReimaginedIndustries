@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "reimaginedindustries:advancedGearbox" },
+            { "model": "reimaginedindustries:advancedGearbox", "y": 90 },
+            { "model": "reimaginedindustries:advancedGearbox", "y": 180 },
+            { "model": "reimaginedindustries:advancedGearbox", "y": 270 },
+            { "model": "reimaginedindustries:advancedGearboxAlternative" },
+            { "model": "reimaginedindustries:advancedGearboxAlternative", "y": 90 },
+            { "model": "reimaginedindustries:advancedGearboxAlternative", "y": 180 },
+            { "model": "reimaginedindustries:advancedGearboxAlternative", "y": 270 }
+        ]
+     }
+}

@@ -1,0 +1,23 @@
+package com.modernpatriot.reimaginedindustries.items.itemblock;
+
+import java.util.List;
+
+import net.minecraft.block.Block;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumChatFormatting;
+
+public class UnstableDustItem extends ItemBlock {
+
+	public UnstableDustItem(Block block) {
+		super(block);
+	}
+	
+	public void addInformation(ItemStack stack, EntityPlayer player, List lines, boolean advancedTooltips) {
+		lines.add(EnumChatFormatting.DARK_GRAY + "Seems to be pretty normal...");
+	}
+	
+	
+
+}

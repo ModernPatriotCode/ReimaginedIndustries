@@ -1,0 +1,18 @@
+[
+{
+"modid": "ReimaginedIndustries",
+"name": "\u00A77Reimagined Industries \u00A7cPre-Alpha",
+"description": "Changing the way you work with machines & magic",
+"version": "\u00A7c0.0.3",
+"mcversion": "\u00A771.8",
+"credits": "Created by Modern Patriot",
+"logoFile": "/RI_Top.png",
+"mcversion": "1.8",
+"url": "",
+"updateUrl": "",
+"authors": ["\u00A77Modern Patriot"],
+"screenshots": [],
+"dependencies": ["mod_MinecraftForge", "baubles"],
+"useDependencyInformation": "true"
+}
+]

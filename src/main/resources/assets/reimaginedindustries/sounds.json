@@ -1,0 +1,6 @@
+{
+    "ambientDark": {"category": "ambient", "sounds": ["ambientDark", "ambientDark2", "ambientDark3"]},
+    "recordMaze": {"category": "record", "sounds": [{"name": "recordMaze", "stream": true, "volume": 0.7}]},
+    "recordWaves": {"category": "record", "sounds": [{"name": "recordWaves", "stream": true, "volume": 0.8}]},
+    "recordLost": {"category": "record", "sounds": [{"name": "recordLost", "stream": true, "volume": 0.8}]}
+}

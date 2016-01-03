@@ -1,0 +1,89 @@
+item.swordTemplate.name=Schwert Vorlage
+item.stickySubstance.name=§aKlebrige Substanz§k
+item.superGlue.name=§eStarker Kleber§k
+item.ingotZirconium.name=Zirconium Barren
+
+item.recordLost.name=Schallplatte
+item.record.recordLost.desc=§kgajlioevsxe
+
+item.recordMaze.name=Schallplatte
+item.record.recordMaze.desc=ModernPatriot - Maze
+
+item.recordWaves.name=Schallplatte
+item.record.recordWaves.desc=ModernPatriot - Waves
+
+tile.woodenStructure.name=Hölzerne Stütze
+tile.netherStructure.name=Höllen Stütze
+tile.reinforcedStructure.name=Verstärkte Stütze
+tile.cobbleStructure.name=Grobe Steinerne Stütze
+tile.smoothStructure.name=Glatte Steinerne Stütze
+tile.basicGearbox.name=Einfacher Kern
+tile.advancedGearbox.name=§eVerstärkter Kern§k
+tile.reinforcedGearbox.name=§dExtremer Kern§k
+tile.unstableDust.name=Ungewöhnlicher Staub
+tile.industrialLoam.name=Industrieller Lehm
+tile.unstableGlass.name=§bEmpfindliches Glass
+tile.unstableGlassColored.name=§bGefärbtes Empfindliches Glass
+tile.orePromethium.name=§aPromethium Erz§r
+tile.oreSperrylite.name=Sperrylit Erz
+tile.oreWolframite.name=Wolframit Erz
+tile.oreBaddeleyite.name=Baddeleyit Erz
+tile.oreChromite.name=Chromit Erz
+tile.oreMagnetite.name=Magnetit Erz
+tile.orePyrolusite.name=Pyrolusit Erz
+tile.oreRhodochrosite.name=Rhodochrosit Erz
+
+achievement.woodenStructureC=Willkommen
+achievement.woodenStructureC.desc=Anfang einer Reise...
+
+achievement.smoothStructureC=Perfektes Design
+achievement.smoothStructureC.desc=Glatte Seiten
+
+achievement.netherStructureC=Höllisches Konstrukt
+achievement.netherStructureC.desc=Was zum Teufel?
+
+achievement.reinforcedStructureC=Stabile Rahmen
+achievement.reinforcedStructureC.desc=Fast unmöglich?
+
+achievement.basicGearboxC=Pandoras Büxe
+achievement.basicGearboxC.desc=Tick, Tack...
+
+achievement.advancedGearboxC=Insmouth Kasten
+achievement.advancedGearboxC.desc=Es atmet...
+
+achievement.reinforcedGearboxC=Industrielle Truhe
+achievement.reinforcedGearboxC.desc=Unstabiles Relikt
+
+achievement.superGlueC=Klebrige Angelegenheit
+achievement.superGlueC.desc=Es klebt so lustig!
+
+achievement.oreMagnetiteP=Steinerne Forschung
+achievement.oreMagnetiteP.desc=Das wars' schon?!
+
+achievement.oreChromiteP=Es glitzert!
+achievement.oreChromiteP.desc=MEINE AUGEN BRENNEN!
+
+achievement.orePromethiumP=Metall der Götter
+achievement.orePromethiumP.desc=Strahlung Deluxe
+
+achievement.oreWolframiteP=Heavy Metal
+achievement.oreWolframiteP.desc=Nicht die Art...
+
+achievement.oreRhodochrositeP=Schöne Steinchen
+achievement.oreRhodochrositeP.desc=Meine Muse ist entzückt!
+
+achievement.recordMazeP=Wo ist der Ausgang?!
+achievement.recordMazeP.desc=Keine Ahnung
+
+achievement.recordWavesP=Privater Strand
+achievement.recordWavesP.desc=Bay Watch 2.0
+
+achievement.recordLostP=Ich hab mich verirrt :(
+achievement.recordLostP.desc=Na Super!
+
+itemGroup.tabIndustries=§8Reimagined Industries§r
+itemGroup.tabIndustriesOre=§8Reimagined Ores§r
+itemGroup.tabIndustriesSpecial=§8Besondere Items§r
+
+reimaginedindustries.waila.basicgearbox.iteminside=Beinhaltet:
+reimaginedindustries.waila.basicgearbox.empty=Leer

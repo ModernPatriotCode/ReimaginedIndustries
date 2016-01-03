@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "reimaginedindustries:basicGearbox" },
+            { "model": "reimaginedindustries:basicGearbox", "y": 90 },
+            { "model": "reimaginedindustries:basicGearbox", "y": 180 },
+            { "model": "reimaginedindustries:basicGearbox", "y": 270 },
+            { "model": "reimaginedindustries:basicGearboxState1" },
+            { "model": "reimaginedindustries:basicGearboxState1", "y": 90 },
+            { "model": "reimaginedindustries:basicGearboxState1", "y": 180 },
+            { "model": "reimaginedindustries:basicGearboxState1", "y": 270 },
+            { "model": "reimaginedindustries:basicGearboxState2" },
+            { "model": "reimaginedindustries:basicGearboxState2", "y": 90 },
+            { "model": "reimaginedindustries:basicGearboxState2", "y": 180 },
+            { "model": "reimaginedindustries:basicGearboxState2", "y": 270 },
+            { "model": "reimaginedindustries:basicGearboxState3" },
+            { "model": "reimaginedindustries:basicGearboxState3", "y": 90 },
+            { "model": "reimaginedindustries:basicGearboxState3", "y": 180 },
+            { "model": "reimaginedindustries:basicGearboxState3", "y": 270 }
+        ]
+     }
+}

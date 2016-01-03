@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "normal": [{ "model": "reimaginedindustries:oreSperrylite" },
+                { "model": "reimaginedindustries:oreSperrylite", "y": 90 },
+                { "model": "reimaginedindustries:oreSperrylite", "y": 180 },
+                { "model": "reimaginedindustries:oreSperrylite", "y": 270 }]
+    }
+}

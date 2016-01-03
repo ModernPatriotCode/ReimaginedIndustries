@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "reimaginedindustries:industrialLoam"},
+            { "model": "reimaginedindustries:industrialLoam", "y": 90},
+            { "model": "reimaginedindustries:industrialLoam", "y": 180},
+            { "model": "reimaginedindustries:industrialLoam", "y": 270}
+        ]
+    }
+}

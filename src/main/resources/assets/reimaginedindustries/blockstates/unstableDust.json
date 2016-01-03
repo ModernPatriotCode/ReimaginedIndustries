@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "normal": [
+            {
+                "model": "reimaginedindustries:unstableDust"
+            },
+            {
+                "model": "reimaginedindustries:unstableDust",
+                "y": 90
+            },
+            {
+                "model": "reimaginedindustries:unstableDust",
+                "y": 180
+            },
+            {
+                "model": "reimaginedindustries:unstableDust",
+                "y": 270
+            }
+        ]
+    }
+}

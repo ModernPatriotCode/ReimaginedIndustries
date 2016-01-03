@@ -1,0 +1,91 @@
+﻿item.swordTemplate.name=Sword Template
+item.stickySubstance.name=§aSticky Substance§r
+item.superGlue.name=§eSuper Glue§r
+item.ingotZirconium.name=Zirconium Ingot
+
+item.recordLost.name=Music Disc
+item.record.recordLost.desc=§kgajlioevsxe
+
+item.recordMaze.name=Music Disc
+item.record.recordMaze.desc=ModernPatriot - Maze
+
+item.recordWaves.name=Music Disc
+item.record.recordWaves.desc=ModernPatriot - Waves
+
+tile.woodenStructure.name=Wooden Structure
+tile.netherStructure.name=Hellish Structure
+tile.reinforcedStructure.name=§7Reinforced Structure§r
+tile.cobbleStructure.name=Rough Structure
+tile.smoothStructure.name=Smooth Structure
+tile.basicGearbox.name=§bBasic Gearbox§r
+tile.advancedGearbox.name=§eAdvanced Gearbox§r
+tile.reinforcedGearbox.name=§dReinforced Gearbox§r
+tile.unstableDust.name=Unstable Dust
+tile.industrialLoam.name=Industrial Loam
+tile.unstableGlass.name=§bUnstable Glass
+tile.unstableGlassColored.name=§bColored Unstable Glass
+tile.orePromethium.name=§aPromethium Ore§r
+tile.oreSperrylite.name=Sperrylite Ore
+tile.oreWolframite.name=Wolframite Ore
+tile.oreBaddeleyite.name=Baddeleyite Ore
+tile.oreChromite.name=Chromite Ore
+tile.oreMagnetite.name=Magnetite Ore
+tile.orePyrolusite.name=Pyrolusite Ore
+tile.oreRhodochrosite.name=Rhodochrosite Ore
+
+achievement.woodenStructureC=Welcome
+achievement.woodenStructureC.desc=Beginning of a journey...
+
+achievement.smoothStructureC=Flawless Design
+achievement.smoothStructureC.desc=Smooth Edges
+
+achievement.netherStructureC=Infernal Construct
+achievement.netherStructureC.desc=What the Hell?
+
+achievement.reinforcedStructureC=Stable Frames
+achievement.reinforcedStructureC.desc=Almost Impossible?
+
+achievement.basicGearboxC=Pandoras Box
+achievement.basicGearboxC.desc=Tick, Tock...
+
+achievement.advancedGearboxC=Insmouth Case
+achievement.advancedGearboxC.desc=It's breathing?!
+
+achievement.reinforcedGearboxC=Industrial Casket
+achievement.reinforcedGearboxC.desc=Unstable Relic
+
+achievement.superGlueC=Spot on
+achievement.superGlueC.desc=Well that's not coming off!
+
+achievement.oreMagnetiteP=The Explorer
+achievement.oreMagnetiteP.desc=Let's go outside!
+
+achievement.oreChromiteP=Shiny!
+achievement.oreChromiteP.desc=MY EYES ARE BURNING!
+
+achievement.orePromethiumP=Metal of the Gods
+achievement.orePromethiumP.desc=Radiation Deluxe
+
+achievement.oreWolframiteP=Heavy Metal
+achievement.oreWolframiteP.desc=Not that kind...
+
+achievement.oreRhodochrositeP=Pretty Gems
+achievement.oreRhodochrositeP.desc=My muse is Delighted!
+
+achievement.recordMazeP=Where's the exit?
+achievement.recordMazeP.desc=No Idea
+
+achievement.recordWavesP=Personal Beach
+achievement.recordWavesP.desc=Bay Watch 2.0
+
+achievement.recordLostP=I think I'm Lost
+achievement.recordLostP.desc=Well... sh*t
+
+itemGroup.tabIndustries=§8Reimagined Industries§r
+itemGroup.tabIndustriesOre=§8Reimagined Ores§r
+itemGroup.tabIndustriesSpecial=§8Special Items§r
+
+reimaginedindustries.waila.basicgearbox.iteminside=Item Inside:
+reimaginedindustries.waila.basicgearbox.empty=Empty
+tile.fireboxInterface.name=Firebox Interface
+tile.fireboxInterfaceActive.name=Burning Firebox Interface

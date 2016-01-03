@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model":"reimaginedindustries:fireboxInterfaceNorth" },
+        "facing=east": { "model":"reimaginedindustries:fireboxInterfaceEast" },
+		"facing=south": { "model":"reimaginedindustries:fireboxInterfaceSouth" },
+		"facing=west": { "model":"reimaginedindustries:fireboxInterfaceWest" }
+    }
+}
