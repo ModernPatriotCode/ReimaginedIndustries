@@ -11,6 +11,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
+/**
+ * <h1> Main crafting recipe class </h1>
+ * Adds the custom recipes for ReimaginedIndustries.
+ * @author MoPat
+ */
 public class RIRecipes
 {
 	public static void addRecipes()

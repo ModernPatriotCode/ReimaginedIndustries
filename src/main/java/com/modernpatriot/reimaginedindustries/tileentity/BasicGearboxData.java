@@ -24,6 +24,12 @@ import com.modernpatriot.reimaginedindustries.core.TileEntityBase;
 
 import io.netty.buffer.ByteBuf;
 
+
+/**
+ * <h1> BasicGearbox TileEntity File </h1>
+ * Everything required for the TileEntity
+ * @author MoPat
+ */
 public class BasicGearboxData extends TileEntityBase implements IInventory {
 
 
@@ -39,25 +45,46 @@ public class BasicGearboxData extends TileEntityBase implements IInventory {
 		this.inventoryContent = new ItemStack[this.getSizeInventory()];
 	}
 
+	/**
+	 * Returns a new itemName
+	 * @return itemName
+	 */
 	public String getItemName() {
 		return this.itemName;
 	}
 
 
+	/**
+	 * Changes the itemName to a new one
+	 * @param itemName
+	 */
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
+	/**
+	 * Returns the custom name
+	 * @return customName
+	 */
 	public String getCustomName() {
 		return this.customName;
 	}
 
 
+	/**
+	 * Overrides the current name with a new one
+	 * @param customName
+	 */
 	public void setCustomName(String customName) {
 		this.customName = customName;
 	}
+	
 
-	//   U S E D   F O R   R O T A T I N G   T E S R
+	/**
+	 * Used for the TESR rotation
+	 * @param revsPerSecond
+	 * @return a new angular position (double)
+	 */
 	public double getNextAngularPosition(double revsPerSecond) {
 		long timeNow = System.nanoTime();
 		if (lastTime == INVALID_TIME) {
@@ -72,7 +99,13 @@ public class BasicGearboxData extends TileEntityBase implements IInventory {
 		lastTime = timeNow;
 		return nextAngularPosition;
 	}
-
+	
+	
+	/**
+	 * Used for the TESR rotation
+	 * @param revsPerSecond1
+	 * @return a new angular position (double)
+	 */
 	public float getNextAngularPosition1(float revsPerSecond1) {
 		long timeNow = System.nanoTime();
 		if (lastTime == INVALID_TIME) {
@@ -246,10 +279,18 @@ public class BasicGearboxData extends TileEntityBase implements IInventory {
 		}
 	}
 
+	/**
+	 * Tries to write the inventory contents to a packet
+	 * @param buf
+	 */
 	public void writeToPacket(ByteBuf buf){
 		ByteBufUtils.writeItemStack(buf, inventoryContent[0]);
 	}
 
+	/**
+	 * Tries to read the inventory contents from a packet
+	 * @param buf
+	 */
 	public void readFromPacket(ByteBuf buf) {
 		inventoryContent[0] = ByteBufUtils.readItemStack(buf);
 		worldObj.markBlockRangeForRenderUpdate(pos, pos);
@@ -265,15 +306,27 @@ public class BasicGearboxData extends TileEntityBase implements IInventory {
 
 	}
 
+	/**
+	 * Overrides the inventory content with a new ItemStack
+	 * @param newStack
+	 */
 	public void setInventoryContent(ItemStack newStack){
 		inventoryContent[0] = newStack;
 		worldObj.markBlockForUpdate(pos);
 	}
 
+	/**
+	 * Returns the inventory content
+	 * @return inventoryContent
+	 */
 	public ItemStack getInventoryContent() {
 		return inventoryContent[0];
 	}
 
+	/**
+	 * Overrides the comparator Output to 15 if something is inside
+	 * @return comparatorOutputStrength
+	 */
 	public int comparatorStrength() {
 		if(this.getInventoryContent()!=null) {
 			return 15;

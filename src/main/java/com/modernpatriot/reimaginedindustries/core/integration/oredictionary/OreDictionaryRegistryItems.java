@@ -5,18 +5,23 @@ import com.modernpatriot.reimaginedindustries.items.ReimaginedItems;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
+/**
+ * Registers Items to the OreDictionary.
+ * @author MoPat
+ */
 public class OreDictionaryRegistryItems extends ReimaginedItems {
 
-		public static void oreRegistration() {
-			// Add Items Here
+	/**
+	 * Called in the init. Used to register the items.
+	 */
+	public static void oreRegistration() {
+		OreDictionary.registerOre("slimeball", stickySubstance);
+		OreDictionary.registerOre("slimeball", superGlue);
 			
-			OreDictionary.registerOre("slimeball", stickySubstance);
-			OreDictionary.registerOre("slimeball", superGlue);
 			
 			
 			
-			
-		}
+	}
 		
 
 	

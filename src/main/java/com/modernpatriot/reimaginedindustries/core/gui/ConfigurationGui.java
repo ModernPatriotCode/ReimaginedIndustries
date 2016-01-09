@@ -8,6 +8,10 @@ import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.config.GuiConfig;
 
+/**
+ * Enables the interface mod configuration by forge.
+ * @author MoPat
+ */
 public class ConfigurationGui extends GuiConfig {
 	
 	public ConfigurationGui(GuiScreen screen) {

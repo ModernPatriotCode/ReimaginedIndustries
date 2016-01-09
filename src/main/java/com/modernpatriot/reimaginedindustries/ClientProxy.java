@@ -27,6 +27,11 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+/**
+ * <h1> ReimaginedIndustries ClientProxy class </h1>
+ * Used to do stuff only on client side
+ * @author MoPat
+ */
 public class ClientProxy extends CommonProxy {
 	
 

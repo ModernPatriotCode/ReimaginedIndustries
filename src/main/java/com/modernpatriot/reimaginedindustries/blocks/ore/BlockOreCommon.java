@@ -4,6 +4,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.EnumWorldBlockLayer;
 
+/**
+ * Class all common ores use. 
+ * @author MoPat
+ */
 public class BlockOreCommon extends Block {
 
 	public BlockOreCommon(Material materialIn) {

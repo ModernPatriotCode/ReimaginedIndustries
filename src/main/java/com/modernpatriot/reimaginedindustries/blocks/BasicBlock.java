@@ -1,11 +1,13 @@
 package com.modernpatriot.reimaginedindustries.blocks;
-//Template for simple blocks
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.EnumWorldBlockLayer;
 
-
+/**
+ * Template for the simplest of simple blocks.
+ * @author MoPat
+ */
 public class BasicBlock extends Block {
 
 	public BasicBlock(Material materialIn) {

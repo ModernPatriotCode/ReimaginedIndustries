@@ -6,8 +6,15 @@ import net.minecraftforge.oredict.OreDictionary;
 
 import com.modernpatriot.reimaginedindustries.blocks.ReimaginedBlocks;
 
+/**
+ * Registers Blocks to the OreDictionary.
+ * @author MoPat
+ */
 public class OreDictionaryRegistryBlocks extends ReimaginedBlocks {
 
+	/**
+	 * Called in the init. Used to register blocks.
+	 */
 	public static void oreRegistration() {
 		
 		//  A D D  B L O C K S   H E R E

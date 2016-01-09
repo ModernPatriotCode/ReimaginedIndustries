@@ -6,8 +6,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.common.ChestGenHooks;
 
+/**
+ * Adds ReimaginedIndustries loot to vanilla chestgen.
+ * @author MoPat
+ */
 public class ChestGen {
 	
+	/**
+	 * Adds ReimaginedIndustries loot to vanilla chestgen. Is called in the init.
+	 */
 	public static void init() {
 		ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ReimaginedItems.recordMaze), 1, 1, 10));
     	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ReimaginedItems.recordWaves), 1, 1, 10));

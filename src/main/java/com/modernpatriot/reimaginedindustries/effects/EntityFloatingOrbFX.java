@@ -25,7 +25,7 @@ public class EntityFloatingOrbFX extends EntityFX{
 
 	@Override
 	public void func_180434_a(WorldRenderer renderer, Entity entityfx, float partialTicks, float par3, float par4, float par5, float par6, float par7) {
-		Minecraft.getMinecraft().renderEngine.bindTexture(ParticleTexturesUtil.sphere);
+		Minecraft.getMinecraft().renderEngine.bindTexture(ParticleTexturesUtil.SPHERE);
 		Tessellator tess = Tessellator.getInstance();
 		glPushMatrix();
 		glDepthMask(false);

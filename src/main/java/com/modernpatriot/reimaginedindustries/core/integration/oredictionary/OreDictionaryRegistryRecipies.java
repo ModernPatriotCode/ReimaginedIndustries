@@ -9,8 +9,16 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.OreDictionary;
 
+/**
+ * Used to add recipes which use any kind of registered OreDictionary items.
+ * @author MoPat
+ *
+ */
 public class OreDictionaryRegistryRecipies {
 	
+	/**
+	 * Adds the OreDictionary recipes.
+	 */
 	public static void addOreRecipes()
     {
 		/*  EXAMPLE: GameRegistry.addRecipe(new ShapedOreRecipe(ReimaginedItems.superGlue, true, new Object[]{

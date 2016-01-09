@@ -6,6 +6,10 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.fml.client.IModGuiFactory;
 
+/**
+ * Used for the interface mod configuration by forge.
+ * @author MoPat
+ */
 public class ReimaginedGUIFactory implements IModGuiFactory{
 
 	@Override

@@ -4,6 +4,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.EnumWorldBlockLayer;
 
+/**
+ * Class all rare ores use. 
+ * @author MoPat
+ */
 public class BlockOreRare extends Block {
 
 	public BlockOreRare(Material materialIn) {

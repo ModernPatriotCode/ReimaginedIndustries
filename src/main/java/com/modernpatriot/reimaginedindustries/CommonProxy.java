@@ -12,16 +12,18 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 
+/**
+ * <h1> ReimaginedIndustries CommonProxy class </h1>
+ * @author MoPat
+ */
 public abstract class CommonProxy {
 
-   public void registerRenders() {
-	   
-	   
+   public void registerRenders() { 
    }
 	
 	
 	public void preInit(FMLPreInitializationEvent e) {
-    	 
+		
     }
 
     public void init(FMLInitializationEvent e) {

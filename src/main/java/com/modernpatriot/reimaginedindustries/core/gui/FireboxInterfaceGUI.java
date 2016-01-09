@@ -15,6 +15,11 @@ import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 
+/**
+ * <h1> The gui for the fireboxInterface </h1>
+ * Everything from heat to slots is calculated here.
+ * @author MoPat
+ */
 @SideOnly(Side.CLIENT)
 public class FireboxInterfaceGUI extends GuiContainer {
 	

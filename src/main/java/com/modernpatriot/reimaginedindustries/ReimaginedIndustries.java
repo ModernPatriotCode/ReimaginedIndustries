@@ -51,6 +51,7 @@ import com.modernpatriot.reimaginedindustries.core.gui.tabs.IndustriesTab;
 import com.modernpatriot.reimaginedindustries.core.integration.oredictionary.OreDictionaryRegistryBlocks;
 import com.modernpatriot.reimaginedindustries.core.integration.oredictionary.OreDictionaryRegistryItems;
 import com.modernpatriot.reimaginedindustries.core.integration.oredictionary.OreDictionaryRegistryRecipies;
+import com.modernpatriot.reimaginedindustries.core.integration.thaumcraft5.ObjectAspectRegistry;
 import com.modernpatriot.reimaginedindustries.core.network.DescHandler;
 import com.modernpatriot.reimaginedindustries.core.network.NetworkHandlerMain;
 import com.modernpatriot.reimaginedindustries.core.util.config.ReimaginedConfig;
@@ -58,8 +59,12 @@ import com.modernpatriot.reimaginedindustries.core.util.handlers.GUIHandler;
 import com.modernpatriot.reimaginedindustries.core.util.handlers.TickHandler;
 import com.modernpatriot.reimaginedindustries.items.ReimaginedItems;
 
-
-
+/**
+ * <h1>MainFile of ReimaginedIndustries.</h1>
+ * Gets Called during preinit, init and postInit. Used for calling the registry classes and registring.
+ * @author MoPat
+ *
+ */
 @Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.VERSION, guiFactory = Reference.GUIFACTORYCLASS)
 public class ReimaginedIndustries
 {
@@ -106,6 +111,7 @@ public class ReimaginedIndustries
 
 		//   I N T E G R A T I O N
 		FMLInterModComms.sendMessage("Waila", "register", "com.modernpatriot.reimaginedindustries.core.integration.waila.WailaRegistry.onWailaCall");
+		ObjectAspectRegistry.registerAspectsForItemsAndBlocks();
 
 		//   C O N F I G
 		configuration = new Configuration(event.getSuggestedConfigurationFile());
@@ -138,7 +144,7 @@ public class ReimaginedIndustries
 		FMLCommonHandler.instance().bus().register(new TickHandler());
 
 		//   A C H I E V E M E N T S   &   E V E N T S
-		AchievementLists.MainRegistry();
+		AchievementLists.mainRegistry();
 
 		//   P R O X Y
 		this.proxy.init(event);

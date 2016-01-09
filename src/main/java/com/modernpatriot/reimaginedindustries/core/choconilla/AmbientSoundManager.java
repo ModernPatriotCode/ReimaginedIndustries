@@ -8,6 +8,10 @@ import net.minecraft.world.EnumSkyBlock;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
 
+/**
+ * Plays ambient sounds when appropriate.
+ * @author MoPat
+ */
 public class AmbientSoundManager {
 	
 	

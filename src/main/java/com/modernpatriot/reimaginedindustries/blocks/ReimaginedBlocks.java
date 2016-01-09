@@ -56,6 +56,12 @@ import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+/**
+ * <h1> ReimaginedIndustries blockregistry </h1>
+ * Registers blocks and itemblocks and gives them some basic properties.
+ * @author MoPat
+ *
+ */
 public class ReimaginedBlocks {
 
 	//Structures
@@ -122,6 +128,9 @@ public class ReimaginedBlocks {
 
 	// Initialization
 
+	/**
+	 * Defines the blocks as being a new instance of the blockfiles and gives the basic properties.
+	 */
 	public static void init()
 	{
 		// Block initialization + material
@@ -221,6 +230,9 @@ public class ReimaginedBlocks {
 
 	// Registration
 
+	/**
+	 * Registers the blocks and their itemblocks.
+	 */
 	public static void register()
 	{
 		GameRegistry.registerBlock(woodenStructure, woodenStructure.getUnlocalizedName().substring(5));
@@ -257,6 +269,9 @@ public class ReimaginedBlocks {
 		GameRegistry.registerBlock(etherealLamp, EtherealLampItem.class, "etherealLamp");
 	}
 
+	/**
+	 * Registers the itemblockrendering through the registerRender() method.
+	 */
 	public static void registerRenders()
 	{
 		registerRender(woodenStructure);
@@ -294,10 +309,14 @@ public class ReimaginedBlocks {
 		registerRender(etherealLamp);
 	}
 
+	/**
+	 * Basic template for registring the itemblock rendering.
+	 * @param block
+	 */
 	public static void registerRender(Block block)
 	{
-		Item item = Item.getItemFromBlock(block);
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+		Item itemBlock = Item.getItemFromBlock(block);
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(itemBlock, 0, new ModelResourceLocation(Reference.MODID + ":" + itemBlock.getUnlocalizedName().substring(5), "inventory"));
 
 	}
 

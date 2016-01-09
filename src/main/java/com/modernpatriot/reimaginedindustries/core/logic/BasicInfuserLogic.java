@@ -1,6 +1,6 @@
 package com.modernpatriot.reimaginedindustries.core.logic;
 
-import com.modernpatriot.reimaginedindustries.core.recipies.BasicInfuserRecipies;
+import com.modernpatriot.reimaginedindustries.core.recipies.BasicInfuserRecipe;
 import com.modernpatriot.reimaginedindustries.core.util.UtilStrings;
 import com.modernpatriot.reimaginedindustries.items.tools.SwordTemplate;
 import com.modernpatriot.reimaginedindustries.tileentity.BasicGearboxData;
@@ -16,6 +16,10 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.oredict.OreDictionary;
 
+/**
+ * Important basic infuser code. Separate for easier usage.
+ * @author MoPat
+ */
 public class BasicInfuserLogic {
 	private static int itemCountOne;
 	private static String whatItemIsOne;
@@ -28,8 +32,15 @@ public class BasicInfuserLogic {
 
 	private static int itemCountFour;
 	private static String whatItemIsFour;
-
-	/* CHECKS ALL THE ITEMS INSIDE THE BASICGEARBOXES AND CHANGES THE VALUE AND STRING OF THE VARIABLES ACCORDINGLY */
+	
+	/**
+	 * Checks the items inside the BasicGearboxes and changes variables accordingly.
+	 * @param infusionItems
+	 * @param pos
+	 * @param worldIn
+	 * @param playerIn
+	 * @param bgd
+	 */
 	public static void checkForRecipeItems(ItemStack[] infusionItems, BlockPos pos, World worldIn, EntityPlayer playerIn, BasicGearboxData bgd) {
 
 		double x = pos.getX();
@@ -61,13 +72,20 @@ public class BasicInfuserLogic {
 		executeRecipe(bgd, pos, worldIn, playerIn);
 	}
 
-	/* LOOKS FOR STRINGS AND COUNTS AND EXECUTES THE CRAFTING PROCESS ACCORDINGLY */
+	
+	/**
+	 * Checks if a recipe requirement is fulfilled and begins with crafting accordingly.
+	 * @param bgd
+	 * @param pos
+	 * @param worldIn
+	 * @param playerIn
+	 */
 	public static void executeRecipe(BasicGearboxData bgd, BlockPos pos, World worldIn, EntityPlayer playerIn) {
 		if(bgd.getInventoryContent().getItem() instanceof SwordTemplate) {
 			if(whatItemIsOne.equals("diamond") && itemCountOne == 2 && whatItemIsTwo.equals("gold") && itemCountTwo == 2) {
 				worldIn.playSoundEffect(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, "random.click", 0.3F, 1.3F-(worldIn.rand.nextFloat()*0.1F));
 				worldIn.playSoundEffect(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, "random.orb", 0.6F, 0.6F-(worldIn.rand.nextFloat()*0.2F));
-				BasicInfuserRecipies.infusionSwordTemplateDiamond(pos, playerIn, worldIn, bgd);
+				//BasicInfuserRecipe.infusionSwordTemplateDiamond(pos, playerIn, worldIn, bgd);
 				clearVariables();
 			}
 		}else{
@@ -75,8 +93,10 @@ public class BasicInfuserLogic {
 		}
 
 	}
-
-	/*   CLEARS ALL USED ITEM VARIABLES	 */
+	
+	/**
+	 * Clears all variables.
+	 */
 	public static void clearVariables() {
 		whatItemIsOne = UtilStrings.EMPTY;
 		itemCountOne = 0;

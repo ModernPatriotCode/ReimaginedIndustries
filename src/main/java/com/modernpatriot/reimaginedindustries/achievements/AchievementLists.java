@@ -10,6 +10,10 @@ import net.minecraft.stats.Achievement;
 import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 
+/**
+ * List and implementation of all custom achievements
+ * @author MoPat
+ */
 public class AchievementLists {
 	// Blocks
 	public static Achievement Achievement_woodenStructure;
@@ -33,7 +37,10 @@ public class AchievementLists {
 	// Items
 	public static Achievement Achievement_superGlue;
 	
-	public static void MainRegistry() {
+	/**
+	 * Registers the achievements and the achievement page
+	 */
+	public static void mainRegistry() {
 		// Crafted Block
 		Achievement_woodenStructure = new Achievement("achievement.woodenStructureC", "woodenStructureC", 0, 0, ReimaginedBlocks.woodenStructure, null);
 		Achievement_smoothStructure = new Achievement("achievement.smoothStructureC", "smoothStructureC", 2, -1, ReimaginedBlocks.smoothStructure, Achievement_woodenStructure);

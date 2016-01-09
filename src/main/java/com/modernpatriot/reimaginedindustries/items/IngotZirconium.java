@@ -3,6 +3,7 @@ package com.modernpatriot.reimaginedindustries.items;
 import java.util.List;
 import net.minecraft.block.BlockMobSpawner;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.item.EntityItem;
@@ -23,6 +24,10 @@ public class IngotZirconium extends Item {
 	@Override
 	public void addInformation(ItemStack stack, EntityPlayer player, List lines, boolean advancedTooltips) {
 		lines.add(EnumChatFormatting.DARK_GRAY + "Lighter than I expected...");	
+		if(GuiScreen.isShiftKeyDown()){
+			lines.add(EnumChatFormatting.WHITE + "Advanced Crafting Material");
+			lines.add(EnumChatFormatting.DARK_RED + "" + EnumChatFormatting.ITALIC + "EXPLODES IF EXPOSED TO WATER");
+		}
 	}	
 	@Override
 	public boolean onEntityItemUpdate(net.minecraft.entity.item.EntityItem entityItem) {

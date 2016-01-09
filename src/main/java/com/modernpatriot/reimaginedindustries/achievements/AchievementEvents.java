@@ -10,8 +10,16 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+/**
+ * Gives achievements when the required objective is completed and adds crafting recipes once specific achievements are completed.
+ * @author MoPat
+ */
 public class AchievementEvents {
 
+	/**
+	 * Gives achievements/adds crafting recipes once certain blockcrafting objectives are completed
+	 * @param e
+	 */
 	@SubscribeEvent
 	public void onBlockCrafted(PlayerEvent.ItemCraftedEvent e) {
 		if(e.crafting.getItem().equals(Item.getItemFromBlock(ReimaginedBlocks.woodenStructure))) {
@@ -47,14 +55,23 @@ public class AchievementEvents {
 		}
 	}
 	
-	// Not necessary but I like to keep it seperate
+	//  N o t   n e c e s s a r y   b u t   I   l i k e   t o   k e e p   t h i n g s   s e p a r a t e d
 	
+	/**
+	 * Gives achievements/adds crafting recipes once certain itemcrafting objectives are completed
+	 * @param e
+	 */
 	@SubscribeEvent
 	public void onItemCrafted(PlayerEvent.ItemCraftedEvent e) {
 		if(e.crafting.getItem().equals(ReimaginedItems.superGlue)) {
 			e.player.addStat(AchievementLists.Achievement_superGlue, 1);
 		}
 	}
+	
+	/**
+	 * Gives achievements/adds crafting recipes once certain itempickup objectives are completed
+	 * @param e
+	 */
 	@SubscribeEvent
 	public void onItemPickup(PlayerEvent.ItemPickupEvent e) {
 		if(e.pickedUp.getEntityItem().isItemEqual(new ItemStack(ReimaginedItems.recordMaze))) {
@@ -65,6 +82,11 @@ public class AchievementEvents {
 			e.player.addStat(AchievementLists.Achievement_recordLost, 1);
 		}
 	}
+	
+	/**
+	 * Gives achievements/adds crafting recipes once certain orepickup objectives are completed
+	 * @param e
+	 */
 	@SubscribeEvent
 	public void onOrePickup(PlayerEvent.ItemPickupEvent e) {
 		if(e.pickedUp.getEntityItem().isItemEqual(new ItemStack(Item.getItemFromBlock(ReimaginedBlocks.oreMagnetite)))) {

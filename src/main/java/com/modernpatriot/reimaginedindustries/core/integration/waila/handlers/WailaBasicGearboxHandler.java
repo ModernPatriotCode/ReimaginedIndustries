@@ -16,6 +16,10 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.fml.common.network.ByteBufUtils;
 
+/**
+ * Helps Waila with displaying useful information about the BasicGearbox.
+ * @author MoPat
+ */
 public class WailaBasicGearboxHandler /*implements IWailaDataProvider*/ {
 	/*private String itemName;
 

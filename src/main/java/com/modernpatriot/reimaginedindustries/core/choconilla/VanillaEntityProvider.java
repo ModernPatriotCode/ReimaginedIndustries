@@ -39,6 +39,10 @@ import net.minecraft.item.Item;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+/**
+ * Provides the vanilla entity drop system with custom drops.
+ * @author MoPat
+ */
 public class VanillaEntityProvider {
 	
 	 boolean pageDragonDropped = false;

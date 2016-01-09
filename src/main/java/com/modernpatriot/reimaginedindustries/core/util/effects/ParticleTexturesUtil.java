@@ -7,11 +7,14 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-
+/**
+ * Used to have a separate reference for particle textures.
+ * @author MoPat
+ */
 @SideOnly(Side.CLIENT)
 public class ParticleTexturesUtil {
-	public static final ResourceLocation spherebig = new ResourceLocation(Reference.MODID, "textures/particles/spherebig.png");
-	public static final ResourceLocation sphere1 = new ResourceLocation(Reference.MODID, "textures/particles/sphere1.png");
-	public static final ResourceLocation spheretest = new ResourceLocation(Reference.MODID, "textures/particles/spheretest.png");
-	public static final ResourceLocation sphere = new ResourceLocation(Reference.MODID, "textures/particles/sphere.png");
+	public static final ResourceLocation SPHEREBIG = new ResourceLocation(Reference.MODID, "textures/particles/spherebig.png");
+	public static final ResourceLocation SPHEREONE = new ResourceLocation(Reference.MODID, "textures/particles/sphere1.png");
+	public static final ResourceLocation SPHERETEST = new ResourceLocation(Reference.MODID, "textures/particles/spheretest.png");
+	public static final ResourceLocation SPHERE = new ResourceLocation(Reference.MODID, "textures/particles/sphere.png");
 }

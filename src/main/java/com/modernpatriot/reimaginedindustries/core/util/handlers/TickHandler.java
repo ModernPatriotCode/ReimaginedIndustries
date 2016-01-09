@@ -1,6 +1,6 @@
 package com.modernpatriot.reimaginedindustries.core.util.handlers;
 
-import com.modernpatriot.reimaginedindustries.core.recipies.BasicInfuserRecipies;
+import com.modernpatriot.reimaginedindustries.core.recipies.BasicInfuserRecipe;
 
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -10,6 +10,6 @@ public class TickHandler {
 
 	@SubscribeEvent
 	public void onRenderTick(PlayerTickEvent event) {
-		BasicInfuserRecipies.everyTick();
+		//BasicInfuserRecipe.everyTick();
 	}
 }

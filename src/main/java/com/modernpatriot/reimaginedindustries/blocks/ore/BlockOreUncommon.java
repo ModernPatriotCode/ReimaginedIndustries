@@ -4,6 +4,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.EnumWorldBlockLayer;
 
+/**
+ * Class all uncommon ores use. 
+ * @author MoPat
+ */
 public class BlockOreUncommon extends Block {
 
 	public BlockOreUncommon(Material materialIn) {

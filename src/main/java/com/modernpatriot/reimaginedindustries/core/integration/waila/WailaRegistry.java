@@ -5,6 +5,11 @@ import com.modernpatriot.reimaginedindustries.core.integration.waila.handlers.Wa
 
 //import mcp.mobius.waila.api.IWailaRegistrar;
 
+/**
+ * Main registry for the Waila integration.
+ * @author MoPat
+ *
+ */
 public class WailaRegistry {
 
 	/*public static void onWailaCall(IWailaRegistrar wailaregistrar) {

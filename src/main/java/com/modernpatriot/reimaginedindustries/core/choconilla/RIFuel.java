@@ -6,6 +6,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.IFuelHandler;
 
+/**
+ * Adds custom items as a fuel.
+ * @author MoPat
+ */
 public class RIFuel implements IFuelHandler {
 
 	@Override
