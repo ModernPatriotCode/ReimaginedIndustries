@@ -1,5 +1,9 @@
 package com.modernpatriot.reimaginedindustries.core.util;
 
+/**
+ * Separate reference for important strings.
+ * @author MoPat
+ */
 public class UtilStrings {
 	
 	public static final String EMPTY = "";

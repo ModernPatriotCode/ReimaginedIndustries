@@ -16,16 +16,16 @@ public class LostJournal extends Item {
 	
 	@Override
 	public void addInformation(ItemStack stack, EntityPlayer player, List lines, boolean advancedTooltips) {
-		counter++;
+		counter += player.worldObj.rand.nextInt(3);
 		lines.add(EnumChatFormatting.DARK_GRAY + "It's dusty...");	
 		if(GuiScreen.isShiftKeyDown()){
 			if(counter == 10 || counter == 56 || counter == 66 || counter == 127 || counter == 130 || counter == 132){
-				lines.add(EnumChatFormatting.RED + "" + EnumChatFormatting.ITALIC + "" + EnumChatFormatting.STRIKETHROUGH + "DON'T EVEN" + EnumChatFormatting.OBFUSCATED + "" + EnumChatFormatting.RED + "" + EnumChatFormatting.ITALIC + "TRY TO DESTROY IT");
+				lines.add(EnumChatFormatting.RED + "" + EnumChatFormatting.ITALIC + "" + EnumChatFormatting.STRIKETHROUGH + "DON'T EVEN " + EnumChatFormatting.OBFUSCATED + "" + EnumChatFormatting.RED + "" + EnumChatFormatting.ITALIC + "TRY TO DESTROY IT");
 			}else{
 				lines.add(EnumChatFormatting.DARK_RED + "" + EnumChatFormatting.ITALIC + "DON'T EVEN TRY TO DESTROY IT");
 			}
 		}
-		if(counter == 150){
+		if(counter >= 150){
 			counter = 0;
 		}
 	}	

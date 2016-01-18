@@ -7,10 +7,14 @@ import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemRecord;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.common.Optional;
+import net.minecraftforge.fml.common.Optional.Method;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class RecordWaves extends ItemRecord {
+
+public class RecordWaves extends ItemRecord{
 
 	public RecordWaves(String name) {
 		super("recordWaves");
@@ -28,5 +32,5 @@ public class RecordWaves extends ItemRecord {
 	{
 	    return EnumRarity.RARE;
 	}
-
+	
 }

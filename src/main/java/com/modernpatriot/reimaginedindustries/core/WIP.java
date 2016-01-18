@@ -1,5 +1,10 @@
 package com.modernpatriot.reimaginedindustries.core;
 
+/**
+ * Everything that needs to be done. <p>
+ * If this file is in a final release please contact me!
+ * @author MoPat
+ */
 public class WIP {
 
 	//  F L U I D S

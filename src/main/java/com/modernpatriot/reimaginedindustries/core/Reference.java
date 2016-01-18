@@ -1,5 +1,9 @@
 package com.modernpatriot.reimaginedindustries.core;
 
+/**
+ * Separate reference for information about the mod.
+ * @author MoPat
+ */
 public class Reference {
 	public static final String MODID = "ReimaginedIndustries";
 	public static final String MODNAME = "Reimagined Industries";

@@ -4,9 +4,17 @@ import net.minecraft.init.Blocks;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 
+/**
+ * Contains important methods.
+ * @author MoPat
+ */
 public class UtilMethods {
 	
-	/* TAKES A WORLD AND A POSITION AND UPDATES ALL REACHABLE COMPARATORS */
+	/**
+	 * Updates all reachable comparators.
+	 * @param worldIn
+	 * @param pos
+	 */
 	public static void updateComparators(World worldIn, BlockPos pos) {
 		
 		BlockPos posA = new BlockPos(pos.getX()+1,pos.getY(),pos.getZ());

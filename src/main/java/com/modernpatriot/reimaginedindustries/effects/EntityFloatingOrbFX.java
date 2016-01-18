@@ -15,6 +15,10 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraft.client.renderer.texture.SimpleTexture;
 
+/**
+ * Particle class.
+ * @author MoPat
+ */
 public class EntityFloatingOrbFX extends EntityFX{
 
 	public EntityFloatingOrbFX(World worldIn, double xCoordIn, double yCoordIn, double zCoordIn, double xSpeedIn, double ySpeedIn, double zSpeedIn) {

@@ -9,6 +9,10 @@ import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.IGuiHandler;
 
+/**
+ * Distributes the gui elements between the server and the client.
+ * @author MoPat
+ */
 public class GUIHandler implements IGuiHandler{
 
 	@Override

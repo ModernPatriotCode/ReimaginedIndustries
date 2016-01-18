@@ -4,8 +4,15 @@ import com.modernpatriot.reimaginedindustries.ReimaginedIndustries;
 
 import net.minecraftforge.fml.common.FMLCommonHandler;
 
+/**
+ * Used to create and sync the config.
+ * @author MoPat
+ */
 public class ReimaginedConfig {
-
+	
+	/**
+	 * Used to sync the config with the variables inside the ConfigVariables class.
+	 */
 	public static void syncConfig() {
 		FMLCommonHandler.instance().bus().register(ReimaginedIndustries.instance);
 

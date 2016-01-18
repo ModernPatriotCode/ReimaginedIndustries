@@ -16,6 +16,12 @@ import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+/**
+ * <h1> ReimaginedIndustries itemkregistry </h1>
+ * Registers items and gives them some basic properties.
+ * @author MoPat
+ *
+ */
 public class ReimaginedItems {
 
 
@@ -45,7 +51,7 @@ public class ReimaginedItems {
 
 
 	public static void init() {
-		swordTemplate = new SwordTemplate().setUnlocalizedName("swordTemplate").setCreativeTab(ReimaginedIndustries.tabIndustries);
+		swordTemplate = new SwordTemplate(null).setUnlocalizedName("swordTemplate").setCreativeTab(ReimaginedIndustries.tabIndustries);
 		swordTemplateDiamond = new SwordTemplateDiamond().setUnlocalizedName("swordTemplateDiamond").setCreativeTab(ReimaginedIndustries.tabIndustries);
 
 		stickySubstance = new StickySubstance().setUnlocalizedName("stickySubstance").setCreativeTab(ReimaginedIndustries.tabIndustries);

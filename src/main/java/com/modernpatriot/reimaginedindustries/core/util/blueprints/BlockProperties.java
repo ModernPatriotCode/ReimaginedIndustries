@@ -11,6 +11,11 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.IStringSerializable;
 
+/**
+ * BLUEPRINT FOR BLOCKS WITH ENUMTYPES (F.E. METADATA) <p>
+ * <i> This is a blueprint class. Blueprint classes are used as a template for similar classes. </i>
+ * @author MoPat
+ */
 public class BlockProperties extends Block {
 
 

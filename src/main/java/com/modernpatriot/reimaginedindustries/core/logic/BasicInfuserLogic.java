@@ -1,6 +1,6 @@
 package com.modernpatriot.reimaginedindustries.core.logic;
 
-import com.modernpatriot.reimaginedindustries.core.recipies.BasicInfuserRecipe;
+import com.modernpatriot.reimaginedindustries.core.recipes.BasicInfuserRecipe;
 import com.modernpatriot.reimaginedindustries.core.util.UtilStrings;
 import com.modernpatriot.reimaginedindustries.items.tools.SwordTemplate;
 import com.modernpatriot.reimaginedindustries.tileentity.BasicGearboxData;

@@ -26,6 +26,7 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.Optional;
 import net.minecraftforge.fml.common.event.FMLInterModComms;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -104,14 +105,13 @@ public class ReimaginedIndustries
 		//   U T I L
 		DescHandler.init();
 
-
 		//   B I O M E S
 		BiomeRegistry.MainBiome();
 		/*BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(new BiomeExWasteland(66), 10));*/
 
 		//   I N T E G R A T I O N
 		FMLInterModComms.sendMessage("Waila", "register", "com.modernpatriot.reimaginedindustries.core.integration.waila.WailaRegistry.onWailaCall");
-		ObjectAspectRegistry.registerAspectsForItemsAndBlocks();
+		initThaumcraftIntegration();
 
 		//   C O N F I G
 		configuration = new Configuration(event.getSuggestedConfigurationFile());
@@ -166,6 +166,14 @@ public class ReimaginedIndustries
 		//   M E S S A G E
 		System.out.println("Welcome to Reimagined Industries "+ Reference.VERSION +"! Have Fun :)");
 
+	}
+	
+	/**
+	 * Separate init for Thaumcraft because of compatibility
+	 */
+	@Optional.Method(modid = "Thaumcraft")
+	public void initThaumcraftIntegration(){
+		ObjectAspectRegistry.registerAspectsForItemsAndBlocks();
 	}
 
 }

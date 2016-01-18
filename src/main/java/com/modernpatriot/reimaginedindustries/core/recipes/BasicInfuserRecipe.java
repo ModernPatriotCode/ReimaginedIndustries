@@ -1,4 +1,4 @@
-package com.modernpatriot.reimaginedindustries.core.recipies;
+package com.modernpatriot.reimaginedindustries.core.recipes;
 
 import java.util.List;
 
@@ -127,14 +127,27 @@ public class BasicInfuserRecipe {
 	}
 	
 	/**
-	 * Adds the BasicInfuserRecipe to the recipeList.
+	 * Adds the BasicInfuserRecipe to the recipeList. The name is for debugging.
+	 * @param recipe
+	 * @param name
+	 */
+	public void addBasicInfuserRecipe(BasicInfuserRecipe recipe, String name){
+		if(recipe != null | recipe.getInputItemAt(0) == null || recipe.getInputItemAt(1) == null || recipe.getInputItemAt(2) == null || recipe.getInputItemAt(3) == null || recipe.getInputItemAt(4) == null || recipe.getOutput() == null){
+			this.recipeList.add(recipe);
+		}else{
+			throw new  IllegalArgumentException("Reimagined Industries tried to add a corrupted basic infuser recipe with the name " + name);
+		}
+	}
+	
+	/**
+	 * Adds the BasicInfuserRecipe to the recipeList. Without a name, debugging corrupted recipes is much harder.
 	 * @param recipe
 	 */
 	public void addBasicInfuserRecipe(BasicInfuserRecipe recipe){
-		if(recipe != null){
+		if(recipe != null | recipe.getInputItemAt(0) == null || recipe.getInputItemAt(1) == null || recipe.getInputItemAt(2) == null || recipe.getInputItemAt(3) == null || recipe.getInputItemAt(4) == null || recipe.getOutput() == null){
 			this.recipeList.add(recipe);
 		}else{
-			
+			throw new  IllegalArgumentException("Reimagined Industries tried to add a corrupted basic infuser recipe with unknown name!");
 		}
 	}
 	
@@ -185,6 +198,23 @@ public class BasicInfuserRecipe {
 			}
 		}
 		return null;
+	}
+	
+	/**
+	 * Checks if the current recipe is equal to another recipe.
+	 * @param recipe
+	 * @return true, false
+	 */
+	public boolean equals(BasicInfuserRecipe recipe){
+		if (recipe!=null){
+			if(input == recipe.getInput() & output == recipe.getOutput() & time == recipe.getTime()){
+				return true;
+			}else{
+				return false;
+			}
+		}else{
+			return false;
+		}
 	}
 	
 	/**

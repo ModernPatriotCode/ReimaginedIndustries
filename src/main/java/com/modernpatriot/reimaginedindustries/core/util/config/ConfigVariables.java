@@ -1,5 +1,9 @@
 package com.modernpatriot.reimaginedindustries.core.util.config;
 
+/**
+ * Used to save the config inside variables.
+ * @author MoPat
+ */
 public class ConfigVariables {
 
 	public static boolean enableParticleEffects;
